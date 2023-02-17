@@ -1,0 +1,43 @@
+body {
+    background-color: beige;
+}
+
+h1 {
+    border: dotted gray 3px;
+    background-color: burlywood;
+}
+
+.Boxes {
+    border-top: dotted gray 3px;
+    width: 500px;
+    height: 500px;
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+
+
+.boxA {
+    background-color: rgb(56, 56, 38);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+}
+
+.boxB {
+    width: 100px;
+    height: 100px;
+    background-color: indianred;
+    margin: 10px;
+
+}
+
+.boxC {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 247, 91, 0.362);
+    margin: 10px;
+}
