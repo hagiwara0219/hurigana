@@ -116,13 +116,66 @@
 // console.log(addCharge(400000));//戻り値
 
 // 複数人のデータを配列にまとめる
-let data = [
-    { name: '山本', bill: 40000, crg: true },
-    { name: '吉田', bill: 25000, crg: false },
-];
-console.log(data[0]['name']);
-console.log(data[0]['bill']);
-console.log(data[0]['crg']);
+// オブジェクトで関数を作る
+// CSSの変数と要素に似ている
+// (変数,パラメータ,)
+// let data = [
+//     { name: '山本', bill: 40000, crg: true },
+//     { name: '吉田', bill: 25000, crg: false },
+// ];
+// console.log(data[1]['name']);
+// console.log(data[1]['bill']);
+// console.log(data[1]['crg']);
+
+// let creatMail = (hi, boo, burried) => {//「recv,bill」の引数と設定
+//     let msg = hi + `様 \n`// 「\n」で改行
+//         + 'PT企画の斎藤です。\n'
+//         + '今月の請求額は' + boo + '円です。';
+//     console.log(msg);
+// };
+// creatMail('加藤', 3000);
+
+
+//` `内の中に書いたものはそのまま文章として使える引数は「${引数名}」で使う
+// let creatMail = (recv, bill) => {
+//     let msg = `${recv}様   
+//     PT企画の斎藤です。
+//     今月の請求額は${bill}円です`;
+//     console.log(msg);
+// }
+// let elem = document.querySelector('p');
+// elem.innerText = 'Javascriptで書く'; //「javascriptで書く」というテキストをPタグに代入する(document .queryselector)
+
+let ipt = document.querySelector('input');
+
+//htmlからボタンオブジェクトからに変数btnを代入する
+let btn = document.querySelector('button');
+
+//セレクタでhtmlからPタグをelemに代入する
+let elem = document.querySelector('p');
+
+// 変数btnに対してクリックしたら発生するイベントを設定
+btn.addEventListener('click', () => { elem.innerText = ipt.value; });
+
+// 追加編集
+
+//elem.innerText = ipt.value;
+
+
+
+
+//アロー関数 //=()=>{}
+// let createMail = (recv, bill) => { //(「引数(パラメータ)」指定)
+//     let msg = recv + '様\n'
+//         + 'PT企画の斎藤です。\n'
+//         + '今月の請求額は' + bill + '$です。'
+//     console.log(msg);
+// };
+// createMail('萩原くん', '3000'); 　//作った関数を指定(パラメータの文字列);
+
+
+
+
 
 
 
