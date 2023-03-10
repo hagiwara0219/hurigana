@@ -60,5 +60,5 @@ if (!isNaN(moji)) {
 
     console.log('まだブロック内です')
 }
-
+console.log('ブロック外だよ');
 
