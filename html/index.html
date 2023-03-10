@@ -6,14 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/hurigana.css">
-    <title>サンプル</title>
+    <title>置き換えマシン</title>
 </head>
 
 <body>
-    <h1>サンプルプログラム</h1>
-    <input type="text">
 
-    <button>実行</button>
+    <h1>置き換えマシン</h1>
+
+    <textarea cols="60" rows="5">
+こんにちはで始まりこんばんはでお休みなさい
+日本とアメリカの距離は首都圏の東京から約289Kmあります。
+アメリカのロス動物園では日本よりも多くの生き物の生活を垣間見ることができます。
+
+    </textarea>
+    <!-- JsからIDを指定してinputtextを指定する -->
+    <input type="text" id="findtxt">
+
+    <input type="text" id="reptxt">
+    <button>置換</button>
     <p>結果表示</p>
     <script src="../js/hurigana.js"></script>
 </body>
